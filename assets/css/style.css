@@ -31,7 +31,7 @@ textarea {
 }
 
 .row {
-  /* white-space: pre-wrap; */
+  white-space: initial;  
   height: 80px;
   border-top: 1px solid white;
 }
@@ -55,9 +55,14 @@ textarea {
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
-
+.textBox {
+  width: 100%;
+  caret-color: #000000;
+  border: 0;
+  margin-top: 5px;
+}
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;

@@ -31,17 +31,26 @@
 
     <div class="container">
       <!-- Timeblocks go here -->
-      <section >
-        <div class = "row time-block">
+      <section id="timeBlock">
+        <div class = "row time-block" id="hourRow" value = "9">
           <div class = "col-2 col-lg-1 pt-3 hour">09:00</div>
+          <!-- <div class = "col-8 col-lg-10 future">
+            <textarea class = "textBox future" name="hourPlan" id="hourPlan" rows="3" cols="30"></textarea>
+          </div> -->
           <div class = "col-8 col-lg-10 future">
-            <textarea class = "form-control border-0 mt-2 future" name="hourPlan" id="hourPlan" rows="2"></textarea>
+            <textarea class = "form-control border-0 mt-1 p-0 future" name="hourPlan" id="hourPlan" rows="3" cols="30"></textarea>
           </div>
+          
           <div class = "col-2 col-lg-1 btn saveBtn far fa-save exSave"></div>
         </div>
 
       </section> 
     </div>
+
+
+    <!-- <div class = "col-8 col-lg-10 future">
+      <textarea class = "form-control border-0 mt-1 p-0 future" name="hourPlan" id="hourPlan" rows="3" cols="30"></textarea>
+    </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
