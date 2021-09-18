@@ -31,7 +31,7 @@ textarea {
 }
 
 .row {
-  white-space: initial;  
+  white-space: pre-wrap;  
   height: 80px;
   border-top: 1px solid white;
 }
