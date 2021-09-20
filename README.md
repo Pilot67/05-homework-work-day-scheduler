@@ -18,8 +18,18 @@ Click on the save icon to save changes to the planner.
   
 The day planner is saved to local storage and will recall any existing plans when you open the web-site.  
   
+# Bult With  
+* html  
+* css  
+* javascript  
+  
 # Librarys Used  
 [moment.js](https://momentjs.com/) to manipulate the time and date.  
 [Bootstrap V5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/) css styling  
 [jQuery V3.5](https://api.jquery.com/) to manipulate and traverse the DOM.  
 [Font Awesome](https://fontawesome.com/) for icon's  
+  
+# Links
+Project Link: https://github.com/Pilot67/05-homework-work-day-scheduler  
+Published Link: https://pilot67.github.io/05-homework-work-day-scheduler/  
+  
