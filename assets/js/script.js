@@ -3,11 +3,7 @@ var timeStamp = $('#currentTime');
 var timeNow = moment().format("Do MMM YYYY hh:mm");
 var currentHour = parseInt(moment().format("H"));
 var setHr;
-
-//set up the array for storing the calendar
-var dayArr = []; 
-dayArr.length = 9;
-getPlanner();
+var dayArr; 
 
 function printScreen(){
     for (index = 9; index <= 17; index++){
@@ -36,7 +32,6 @@ function printTense (){
         // check each child row 
         for (var index = 1; index !== $('#timeBlock').children().length+1; index++){
             var currentTimeBlock = $('#timeBlock #hourRow:nth-child('+index+')');
-           
             if (currentTimeBlock.data("hour") === currentHour){
                 //code to render present hour
                 $('#timeBlock #hourRow:nth-child('+index+') #hourDisplay').attr({class: "col-8 col-lg-10 present"});
@@ -61,7 +56,10 @@ timeBlockEl.on('click', '.saveBtn',function(event){
 
 function getPlanner(){
     dayArr = JSON.parse(localStorage.getItem("dayPlanner"));
-    console.log(dayArr)
+    if (!dayArr) {
+        dayArr = [];
+        dayArr.length=9
+    }
 }
 
 function init(){
